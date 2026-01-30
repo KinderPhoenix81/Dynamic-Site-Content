@@ -1,0 +1,27 @@
+.outer-content-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.outer-content-container img {
+	height: 96px;
+	width: 96px;
+	justify-self: center;
+  margin-right: 96px;
+  margin-top: 32px;
+}
+
+.item-name-text {
+	grid-column: span 2;
+	padding-top: 16px;
+}
+
+.item-details-container {
+	grid-column: 1;
+  grid-row: span 2;
+  padding-right: 16px;
+}
+
+.item-history-container {
+	grid-column: 2;
+}
