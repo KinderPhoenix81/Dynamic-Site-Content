@@ -7,8 +7,8 @@
 	height: 96px;
 	width: 96px;
 	justify-self: center;
-  margin-right: 96px;
-  margin-top: 32px;
+  margin-right: 48px;
+  margin-top: 16px;
 }
 
 .item-name-text {
@@ -24,4 +24,27 @@
 
 .item-history-container {
 	grid-column: 2;
+}
+
+#page {
+	margin 0;
+}
+
+.asterthemes-wrapper {
+	padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+	.outer-content-container img {
+	height: 96px;
+	width: 96px;
+	}
+	
+	#page {
+		margin 0 20px;
+	}
+	
+	.asterthemes-wrapper {
+		padding: 0 20px;
+	}
 }
