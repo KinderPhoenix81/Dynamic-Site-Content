@@ -59,9 +59,9 @@ function external_db_shortcode_sots() {
 	//Run a check if other versions of the item have existed before
 	if($record->Version > 1) {
 		
-		//Get the results for that previous item history
+		//Get the results for that previous item history using prepared statement
 		$item_history_results = $db->get_results(
-		"SELECT * FROM ItemHistory WHERE ItemID = " . $record->Item_ID
+			$db->prepare("SELECT * FROM ItemHistory WHERE ItemID = %d", $record->Item_ID)
 		);
 
     //Loop through each item version
